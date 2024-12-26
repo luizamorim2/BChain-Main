@@ -24,7 +24,9 @@ Além disso, o projeto utiliza o MongoDB como banco de dados. Certifique-se de t
    npm install
    ```
 
-3. Execute o script utilizando:
+4. Configure o arquivo config.json corretamente
+
+5. Execute o script utilizando:
    ```bash
    node index.js
    ```

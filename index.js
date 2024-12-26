@@ -1,9 +1,10 @@
 // Simulação de Comunicação e Forks em Blockchain
 const crypto = require('crypto');
 const mongoose = require('mongoose');
+const config = require('./config.json')
 
 // Conectar ao MongoDB
-mongoose.connect('mongodb+srv://luizdb:luizdb@cluster0.dqelm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(config.MONGOOSE_URL)
     .then(() => console.log('Conectado ao MongoDB com sucesso!'))
     .catch(err => console.error('Erro ao conectar ao MongoDB:', err));
 
